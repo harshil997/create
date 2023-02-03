@@ -1,0 +1,55 @@
+<doctype html>
+<html>
+    <head>
+        <title>Menu</title>
+    </head>
+<style>
+*{
+    box-sizing: border-box;
+    background-color: cornsilk;
+}
+.menu{
+    overflow: hidden;
+    color: #333;
+}
+.menu a{
+    float: left;
+    display: block;
+    background-color:forestgreen;
+    color:lightblue;
+    text-align: center;
+    padding: 13px 15px;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.menu a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+@media  screen and (max-width:800px) {
+.menu a{
+    float: none;
+    width: 100%;
+    background-color: darkorange;
+}   
+}
+@media  screen and (max-width:600px) {
+.menu a{
+    float: none;
+    width: 100%;
+    background-color: rgb(220, 98, 209);
+}
+</style>
+<body>
+    <h2>Responsive navigation menu</h2>
+    <p>Resize the browser window to see the effect: When the screen is less than 600px, the navigation menu will be displayed vertically instead of horizontally.</p>
+<div class="menu">
+    <a href="#">Media Types In Css</a>
+    <a href="#">All</a>
+    <a href="#">Print</a>
+    <a href="#">Screen</a>
+    <a href="#">Speech</a>
+</div>
+
+</body>
+</html>
